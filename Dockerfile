@@ -37,4 +37,4 @@ COPY --from=builder /home/app/target/release/zero2prod zero2prod
 COPY configuration /home/app/configuration
 
 ENV APP_ENVIRONMENT production
-ENTRYPOINT ["home/app/target/release/zero2prod"]
+ENTRYPOINT ["/home/app/target/release/zero2prod"]
